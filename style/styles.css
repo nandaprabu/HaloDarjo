@@ -1,0 +1,523 @@
+:root{
+    --bg1: linear-gradient(0deg,#d9f6da 50%,#F5F5F5);
+    --bg2: linear-gradient(0deg,#F5F5F5, #D9F6DA 50%);
+    --bg3: #D9F6DA;
+    --fcl1: #000;
+    --fcl2: #16AF57;
+    --fcl3: #D0CFCE;
+    --btn: #008037;
+    --ctr: #D3EDD4 50%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg3);
+}
+
+.header-body{
+    background: var(--bg1);
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7% 1rem 3%;
+    border-bottom: 1px solid #000;
+    background: #F5F5F5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .namaApp{
+    font-weight: 900;
+    font-size: 32px;
+    color: var(--fcl1);
+}
+
+.navbar .namaApp span{
+    color: var(--fcl2);
+}
+
+.navbar .navbar-nav a{
+    color: var(--fcl1);
+    display: inline-block;
+    font-weight: 500;
+    font-size: 15px;
+    margin: auto 1rem;
+}
+
+.navbar .navbar-nav a:hover{
+    color: var(--btn);
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid var(--btn);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.navbar .icon-menu{
+    display: none;
+}
+
+
+/* First Page */
+.first-page{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5rem;
+}
+
+.first-page .first-page-word{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    position: relative;
+}
+
+.first-page .first-page-word h1{
+    font-weight: 800;
+    font-size: 42px;
+}
+
+.first-page .first-page-word p{
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.first-page .first-page-word a{
+    min-width: 280px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.first-page .first-page-word .googleplay-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--btn);
+    color: var(--fcl1);
+    border-radius: 10px;
+}
+
+.first-page .first-page-word .googleplay-btn .playstore{
+    height: 45px;
+    padding-left: 1rem;
+    position: absolute;
+    margin-right: 3rem;
+    display: block;
+}
+
+.googleplay-btn p{
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    padding-left: 4.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.googleplay-btn .tulisangoogle{
+    height: 25px;
+    position: absolute;
+    padding-left: 4rem;
+    margin-top: 2rem;
+}
+
+
+.first-page .first-page-img img{
+    max-width: 700px;
+    position: relative;
+    padding-right: 2rem;
+}
+
+/* Main */
+
+/* Second Page */
+.second-page{
+    background: var(--bg2);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-page-intro #tentang-kami,
+.fourth-page #kontak{
+    padding-top: 6rem;
+    font-weight: 800;
+    font-size: 30px;
+    margin-left: 3%;
+    border-bottom: 1px solid;
+    display: inline;
+}
+
+.second-page-intro p{
+    padding-top: 1rem;
+    margin-left: 3%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.second-page article{
+    display: flex;
+    border: 1px solid var(--ctr);
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 1.5rem;
+    max-width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+    background: var(--ctr);
+}
+
+.second-page .second-page-content img{
+    max-width: 250px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.second-page .copywriting-ct-pg2{
+    font-weight: 500;
+    font-size: 18px;
+    padding-left: 1.5rem;
+}
+
+/* Third Page */
+.third-page{
+    background: var(--bg1);
+    min-height: 100vh;
+}
+
+.third-page h1{
+    padding-top: 6rem;
+    font-weight: 800;
+    font-size: 30px;
+    margin-left: 3%;
+    border-bottom: 1px solid;
+    width: 4.5rem;
+}
+
+.third-page .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.third-page .card .fitur-card{
+    margin: 2rem 3.5rem;
+}
+
+.third-page .card .fitur-card img{
+    max-width: 95px;
+    border-radius: 50px;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #CBEDCD 75%;
+}
+
+/* Fourth Page */
+.fourth-page{
+    display: flex;
+    box-sizing: border-box;
+}
+
+.fourth-page .hubungi-kami{
+    flex: 5;
+}
+
+/* Contact Form */
+.hubungi-kami .form-contact-row{
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    background-color: var(--ctr);
+}
+
+.hubungi-kami .form-contact-row .map{
+    flex: 1 1 45rem;
+    height: 330px;
+}
+
+.hubungi-kami .form-contact-row form{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hubungi-kami .form-contact-row form .input-group{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding-left: 1rem;
+}
+
+.hubungi-kami .form-contact-row form .input-comment{
+    display: flex;
+    margin-top: 1rem;
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding-left: 1rem;
+    height: 4rem;
+}
+
+.hubungi-kami .form-contact-row form input{
+    width: 100%;
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 18px;
+    background: none;
+    color: var(--fcl1);
+}
+
+.fourth-page .hubungi-kami form .kirim-btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    background-color: var(--btn);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* The Author Biography */
+.fourth-page aside{
+    flex: 2;
+    margin: 2rem;
+    border: 1px dashed #000;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+aside .intro-author{
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-author .header-aside{
+    font-weight: 800;
+    font-size: 17px;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.author-biography .first-style{
+    font-weight: 500;
+    font-size: 15px;
+    text-align: justify;
+    margin: auto 1rem;
+}
+
+.author-biography .first-style span{
+    color: var(--btn);
+    font-weight: bold;
+}
+
+.author-biography img{
+    min-width: 160px;
+    display: inline;
+    float: left;
+}
+
+.author-biography .second-style{
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0.5rem 1rem;
+    text-align: right;
+}
+
+
+/* Footer */
+footer {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 15px;
+    color: var(--fcl1);
+    background-color: var(--btn);
+    text-align: center;
+}
+
+footer a{
+    color: var(--fcl1);
+}
+
+footer a:hover{
+    color: var(--fcl3);
+}
+
+
+/* Perangkat dengan lebar layar 1200px dan dibawahnya */
+@media screen and (max-width: 1200px){
+    html{
+        font-size: 75%;
+    }
+    .first-page .first-page-word .googleplay-btn .playstore{
+        padding-left: 1rem;
+    }
+
+    .googleplay-btn p{
+        padding-left: 6rem;
+        margin-bottom: 1rem;
+    }
+
+    .googleplay-btn .tulisangoogle{
+        padding-left: 6rem;
+        margin-top: 3rem;
+    }
+
+    .first-page{
+        flex-wrap: wrap;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .first-page-word{
+        order: 2;
+    }
+
+    .first-page-img{
+        order: 1;
+    }
+
+    .first-page .first-page-img img{
+        max-width: 500px;
+        padding-right: 2rem;
+    }
+
+    .second-page{
+        margin-top: 4rem;
+    }
+
+    .second-page article{
+        padding: 2rem;
+    }
+
+    .fourth-page{
+        flex-wrap: wrap;
+    }
+
+    .form-contact-row{
+        flex-wrap: wrap;
+    }
+}
+
+/* Perangkat dengan lebar layar 768px dan dibawahnya */
+@media screen and (max-width: 768px){
+    html{
+        font-size: 62.5%;
+    }
+
+    .navbar .icon-menu{
+        display: inline-block;
+    }
+
+    .navbar .icon-menu img{
+        width: 45px;
+    }
+
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #F5F5F5;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .navbar .navbar-nav.active{
+        right: 0;
+    }
+
+    .navbar .navbar-nav a{
+        color: var(--fcl1);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .navbar .navbar-nav a::after{
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover::after{
+        transform: scaleX(0.2);
+    }
+
+    .first-page .first-page-word .googleplay-btn .playstore{
+        padding-left: 1rem;
+    }
+
+    .googleplay-btn p{
+        padding-left: 6rem;
+        margin-bottom: 1rem;
+    }
+
+    .googleplay-btn .tulisangoogle{
+        padding-left: 6rem;
+        margin-top: 3rem;
+    }
+
+    .first-page .first-page-img img{
+        max-width: 500px;
+        padding-right: 2rem;
+    }
+
+    .second-page{
+        margin-top: 6rem;
+    }
+
+    .second-page .second-page-content article img{
+        max-width: 150px;
+    }
+
+    .fourth-page{
+        flex-wrap: wrap;
+    }
+
+    .form-contact-row{
+        flex-wrap: wrap;
+    }
+
+    .intro-author .author-biography .first-style{
+        margin-bottom: 1.5rem;
+    }
+}
+
+
